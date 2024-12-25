@@ -1,0 +1,67 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+.game-area {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+#question {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#answer {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.waiting-screen {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.player-status {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#waiting-message {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+} 
